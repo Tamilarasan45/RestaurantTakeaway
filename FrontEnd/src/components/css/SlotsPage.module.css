@@ -1,0 +1,53 @@
+.slotsContainer {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.slotsTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.slotsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.slotCard {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.slotCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slotDetails {
+    margin-bottom: 1rem;
+}
+
+.slotInfo {
+    margin-bottom: 0.5rem;
+}
+
+.editButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.editButton:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,122 @@
+.foodListContainer {
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.AddMinControls{
+  padding-left: 100px;
+  width: 84px;
+  margin-left: 72rem;
+}
+.foodListTitle {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.greenButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 7px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 122px;
+  border-radius: 4px;
+}
+
+.foodList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.foodItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.foodItem:hover {
+  background-color: #f8f9fa;
+}
+
+.foodDetails {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.foodName {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.editButton {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.editButton:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .foodDetails {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .foodItem {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 11;
+}
+.foodLabel {
+  flex-grow: 1;
+}
+
+.foodItem div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 0 5px;
+}

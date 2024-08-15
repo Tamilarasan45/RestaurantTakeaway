@@ -1,0 +1,53 @@
+.slot-booking-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.slots {
+    display: grid; /* Changed to grid layout for better control */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Creates a flexible grid layout */
+    gap: 10px; /* Space between grid items */
+    justify-items: center; /* Center grid items */
+    margin: 20px 0;
+}
+
+.slot-button {
+    padding: 5px; /* Reduced padding */
+    width: auto; /* Adjust width as needed, or remove for auto-width */
+    margin: 0; /* Adjusted margin */
+    background-color: lightgray;
+    border: 1px solid #ccc; /* Border added for definition */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.875rem; /* Font size adjusted for smaller buttons */
+    color: black;
+}
+
+.slot-button.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.confirm-booking-button {
+    padding: 10px 15px; /* Reduce padding */
+    font-size: 14px; /* Smaller font size */
+    width: auto; /* Allow the width to auto-adjust to content size */
+    display: inline-block; /* Display inline-block for auto width */
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    margin-top: 20px; /* Space between slots and button */
+}
+
+.confirm-booking-button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.slot-booking-container .confirm-booking-button {
+    margin: 0 auto; /* Center the button in the container */
+    display: block; /* Override inline-block if necessary to center */
+}

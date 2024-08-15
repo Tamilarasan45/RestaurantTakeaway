@@ -1,0 +1,105 @@
+.foodListContainer {
+
+    max-width: 1200px;  
+    margin: 1rem auto;
+  
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  
+  
+  .foodListTitle {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .greenButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 122px;
+    border-radius: 4px;
+  }
+  
+  .foodList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .foodItem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;  
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .foodItem:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .foodDetails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .foodDetails div {
+    padding: 8px 0; 
+  }
+  
+  .editButton {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .editButton:hover {
+    transform: scale(1.05); 
+    background-color: #3e8e41;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .foodItem {
+      grid-template-columns: 1fr;
+  }
+  
+    .foodDetails {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050; 
+  }

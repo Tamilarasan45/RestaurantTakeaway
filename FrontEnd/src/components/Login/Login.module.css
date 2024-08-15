@@ -1,0 +1,113 @@
+.login {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('login.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .error {
+    color: #D8000C;
+    background-color: #FFD2D2;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #D8000C;
+    text-align: center;
+    font-size: 14px;
+}
+.registerButton {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+}
+
+.registerButton:hover {
+  text-decoration: underline;
+}
+
+  
+  h1 {
+    margin-bottom: 20px;
+    color: indianred;
+  }
+  
+  .logincontainer {
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .login-container h2 {
+    text-align: center;
+  }
+  
+  .formgroup {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="email"] {
+    width: calc(100% - 22px); 
+  }
+  
+  input[type="password"] {
+    width: calc(100% - 22px);
+  }
+  
+  .forgotpassword {
+    font-size: 14px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .forgotpassword:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .registerlink {
+    text-align: center;
+  }
+  
+  .registerlink a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }

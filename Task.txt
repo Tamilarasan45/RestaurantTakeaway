@@ -1,0 +1,47 @@
+1.The owner signs into their online account and can edit their list of delivery days (Monday – Sunday)
+and times; and the number of delivery slots that are available at each day-time.
+    a.add, delete ,update times slots
+
+2. The owner signs into their account and adds a food item to their list of foods available to order.
+They can also edit existing food items. For each food item a name, textual description, and price are
+included. By default, a food item’s status is in ‘draft’ while later, when completed, then it is set to
+‘published’. Once published, it is publicly viewable on the website.
+    
+
+3. Customers sign into their online account and view the published menu. Customers, when viewing
+the menu, can select items to purchase, and choose available delivery date and time. The chosen
+delivery time is removed from the businesses list of delivery times for that date-time.
+
+
+Username: DbUser
+password: FVLLIjn4Z2W3Zbjg
+
+
+db:
+User
+food
+slots
+
+
+frontend task:
+for addFood
+send draft when user select save and edit for later . send publish when user select publish
+
+
+mongo cloud uri
+const uri = "mongodb+srv://DbUser:FVLLIjn4Z2W3Zbjg@restaurantdb.ih0rfwo.mongodb.net/?retryWrites=true&w=majority&appName=RestaurantDb";
+
+completed Task:
+Developed api for adding new foods (user story 2)
+Developed api for listing all foods (user story 2)
+Developed api for updating food details (user story 2)
+
+on progress:
+start user story one
+
+finished:
+home
+menu
+login/ register
+
+onprogress - slot:
